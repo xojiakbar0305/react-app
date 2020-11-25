@@ -1,4 +1,7 @@
 import React from 'react'
+import section from '../section/section'
+import xizmatlar from '../xizmatlar/xizmatlar'
+// import {  } from 'react-router-dom'
 import './header.css'
 
 export default () => {
@@ -25,23 +28,13 @@ const Nav = () => {
 		<nav className="nav">
 			<ul>
 				<li>
-					<button>
+					<button onClick={() => section}>
 						<span>Home</span>
 					</button>
 				</li>
 				<li>
-					<button>
-						<span>Couses</span>
-					</button>
-				</li>
-				<li>
-					<button>
-						<span>Team</span>
-					</button>
-				</li>
-				<li>
-					<button>
-						<span>About Us</span>
+					<button onClick={() => xizmatlar}>
+						<span>Services</span>
 					</button>
 				</li>
 				<li>
