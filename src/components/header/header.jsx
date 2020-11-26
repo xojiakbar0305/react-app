@@ -1,7 +1,5 @@
 import React from 'react'
-import section from '../section/section'
-import xizmatlar from '../xizmatlar/xizmatlar'
-// import {  } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './header.css'
 
 export default () => {
@@ -28,14 +26,17 @@ const Nav = () => {
 		<nav className="nav">
 			<ul>
 				<li>
-					<button onClick={() => section}>
-						<span>Home</span>
-					</button>
+					<Link to="/">
+						<button>
+							<span>Home</span>
+						</button>
+					</Link>
 				</li>
 				<li>
-					<button onClick={() => xizmatlar}>
-						<span>Services</span>
-					</button>
+					<Link to="/services">
+						<button>
+							<span>Services</span>
+						</button></Link>
 				</li>
 				<li>
 					<button>
